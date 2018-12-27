@@ -17,7 +17,7 @@ library(ggplot2)
 ggplot(icetdcfit,aes(x=tau,y=Edic_Hba))+geom_line(aes(group=id),col="steelblue")+xlab("\nDays")
 ```
 
-![Longitudinal trajectories of glycemia](LWLR_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![Longitudinal trajectories of glycemia](https://user-images.githubusercontent.com/45238159/50477753-f97a5380-09cd-11e9-84b9-e47fdcc26170.png)
 
 <br><br>The survival outcomes of interest are the times of progression of retinopathy. Of the N=1316 subjects, 1085 event times are right-censored and 231 are interval-censored. The left- and right- endpoints are obtained as follows,
 
