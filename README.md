@@ -37,7 +37,7 @@ load("sFit.icetdc.rda")
 plot(sFit.icetdc,XLAB="Days")
 ```
 
-![NPMLE of the survival function of being diabetic retinopathy](LWLR_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![unnamed-chunk-4-1](https://user-images.githubusercontent.com/45238159/52239549-07759b00-28cf-11e9-9a98-07bdae4f8a3a.png)
 
 <br><br>Our methodology is an extension of the log-rank test statistic to provide evidence of a plausible association between a time-to-event outcome *T* and a time-dependent covariate *z*(*t*). The computation of the test statistic *LWLR* requires the exact values of *z*<sub>*i*</sub>(*t*) (*i* = 1, …, *n*) at the jumping points of the NPMLE of the survival function. Since these values are usually not known, we propose to use predicted values based on a fitted linear mixed model for *z*<sub>*i*</sub>(*t*). In the case of the *Edic\_Hba*, we assume a linear evolution in time and propose the following linear mixed model with random intercept and slope,
 
