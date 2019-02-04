@@ -1,7 +1,7 @@
 A nonparametric test for the association between longitudinal covariates and censored survival data
 ================
 
-This is a document explaining and providing the code used in the paper (Oller and Gómez 2018). The methodology is illustrated with a dataset from the study Epidemiology of Diabetes Interventions and Complications (Sparling et al. 2006). The dataset (in SAS format) can be downloaded from the web of the [GW Biostatistics Center](http://www.bsc.gwu.edu/bsc/webpage.php?no=6&rnd=729).
+This is a document explaining and providing the code used in the paper (Oller and Gómez 2019). The methodology is illustrated with a dataset from the study Epidemiology of Diabetes Interventions and Complications (Sparling et al. 2006). The dataset (in SAS format) can be downloaded from the web of the [GW Biostatistics Center](http://www.bsc.gwu.edu/bsc/webpage.php?no=6&rnd=729).
 
 You can import the data set into **R** like this
 
@@ -17,7 +17,7 @@ library(ggplot2)
 ggplot(icetdcfit,aes(x=tau,y=Edic_Hba))+geom_line(aes(group=id),col="steelblue")+xlab("\nDays")
 ```
 
-![Longitudinal trajectories of glycemia](https://user-images.githubusercontent.com/45238159/50477753-f97a5380-09cd-11e9-84b9-e47fdcc26170.png)
+![Longitudinal trajectories of glycemia](LWLR_files/figure-markdown_github/unnamed-chunk-2-1.png)
 
 <br><br>The survival outcomes of interest are the times of progression of retinopathy. Of the N=1316 subjects, 1085 event times are right-censored and 231 are interval-censored. The left- and right- endpoints are obtained as follows,
 
@@ -37,7 +37,7 @@ load("sFit.icetdc.rda")
 plot(sFit.icetdc,XLAB="Days")
 ```
 
-![NPMLE of the survival function of being diabetic retinopathy](https://user-images.githubusercontent.com/45238159/50477807-478f5700-09ce-11e9-9cfa-c7728cd6dc49.png)
+![NPMLE of the survival function of being diabetic retinopathy](LWLR_files/figure-markdown_github/unnamed-chunk-4-1.png)
 
 <br><br>Our methodology is an extension of the log-rank test statistic to provide evidence of a plausible association between a time-to-event outcome *T* and a time-dependent covariate *z*(*t*). The computation of the test statistic *LWLR* requires the exact values of *z*<sub>*i*</sub>(*t*) (*i* = 1, …, *n*) at the jumping points of the NPMLE of the survival function. Since these values are usually not known, we propose to use predicted values based on a fitted linear mixed model for *z*<sub>*i*</sub>(*t*). In the case of the *Edic\_Hba*, we assume a linear evolution in time and propose the following linear mixed model with random intercept and slope,
 
@@ -93,6 +93,7 @@ Both results show a high and positive association between the risk of having dia
 References
 ==========
 
-Oller, Ramon, and Guadalupe Gómez. 2018. “A Nonparametric Test for the Association Between Longitudinal Covariates and Censored Survival Data.” *Under Review*.
+Oller, Ramon, and Guadalupe Gómez. 2019. “A Nonparametric Test for the Association Between Longitudinal Covariates and Censored Survival Data.” *To Appear in Biostatistics*.
 
 Sparling, Yvonne H, Naji Younes, John M Lachin, and Oliver M Bautista. 2006. “Parametric Survival Models for Interval-Censored Data with Time-Dependent Covariates.” *Biostatistics* 7 (4): 599–614.
+
