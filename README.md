@@ -1,7 +1,7 @@
 A nonparametric test for the association between longitudinal covariates and censored survival data
 ================
 
-This is a document explaining and providing the code used in the paper (Oller and Gómez 2019). The methodology is illustrated with a dataset from the study Epidemiology of Diabetes Interventions and Complications (Sparling et al. 2006). The dataset (in SAS format) can be downloaded from the web of the [GW Biostatistics Center](https://biostatcenter.gwu.edu/people/research-faculty/john-m-lachin){target="_blank"}.
+This is a document explaining and providing the code used in the paper (Oller and Gómez 2019). The methodology is illustrated with a dataset from the study Epidemiology of Diabetes Interventions and Complications (Sparling et al. 2006). The dataset (in SAS format) can be downloaded from the web of the <a href="https://biostatcenter.gwu.edu/people/research-faculty/john-m-lachin" target="_blank">GW Biostatistics Center</a>.
 
 You can import the data set into **R** like this
 
